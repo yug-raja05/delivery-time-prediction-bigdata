@@ -1,0 +1,24 @@
+# ==========================================
+# DELIVERY TIME PREDICTION - HDFS COMMANDS
+# ==========================================
+
+# Create raw directory
+hdfs dfs -mkdir -p /data/delivery/raw
+
+# Upload raw dataset
+hdfs dfs -put Food_Delivery_Times.csv /data/delivery/raw/
+
+# List raw data
+hdfs dfs -ls /data/delivery/raw/
+
+# Create processed directory
+hdfs dfs -mkdir -p /data/delivery/processed
+
+# List processed data
+hdfs dfs -ls /data/delivery/processed
+
+# Create results directory
+hdfs dfs -mkdir -p /data/delivery/results
+
+# List results
+hdfs dfs -ls /data/delivery/results
